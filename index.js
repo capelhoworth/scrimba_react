@@ -1,11 +1,6 @@
-// JSX = "a flavor of JavaScript that looks like HTML"
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-// const page = (
-//     <div>
-//         <h1 className="header">This is JSX</h1>
-//         <p>This is a paragraph</p>
-//     </div> 
-// )
 
 const navbar = (
     <nav>
@@ -18,8 +13,10 @@ const navbar = (
     </nav>  
 )
 
-ReactDOM.render(
-    navbar,
-    document.getElementById("root")
-)
+// ReactDOM.render(
+//     navbar,
+//     document.getElementById("root")
+// )
+
+ReactDOM.createRoot(document.getElementById("root")).render(navbar)
 
